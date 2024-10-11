@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Control Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="toggleLed">ON/OFF LED</button>
+
+        <div class="gauge">
+            <label for="brightness">Color Variation</label>
+            <input type="range" id="brightness" min="0" max="255" step="1">
+        </div>
+
+        <div class="color-picker">
+            <label for="rgb">RGB Color</label>
+            <select id="rgb">
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+            </select>
+        </div>
+
+        <div class="temperature">
+            <label for="temp">Temperature</label>
+            <div id="tempDisplay">-- °C</div>
+        </div>
+
+        <button id="reset">STOP</button>
+        <!--<div id="mousePointer" style="position: absolute; width: 10px; height: 10px; background-color: red; border-radius: 50%;"></div>-->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
